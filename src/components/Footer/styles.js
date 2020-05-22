@@ -1,14 +1,20 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    margin-top:20px;
-    height: 260px;
+    height: 380px;
     width: 100%;
     color: #ffffff;
-    padding-top: 40px;
-    background-color: #123456;
-    padding: 30px;
-    position:relative;
-    top:100%;
-    left:0%;
+    background-color: #148c8b;
+    padding: 20px;
+    display: flex;
+    
+`;
+
+export const Content = styled.div`
+    height: 260px;
+    width: 50%;
+    color: #ffffff;
+    background-color: #148c8b;
+    padding: 20px;
+    
 `;
