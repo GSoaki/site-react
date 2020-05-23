@@ -1,0 +1,38 @@
+.ContainerContainer{
+    height: 150%;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+}
+
+.entryContainer{
+    height: 50%;
+    width: 100%;
+}
+
+.lastContainer{
+    height: 50%;
+    width: 100%;
+}
+
+.iconArrow{
+    background-color: white;
+    position:'relative';
+}
+
+.iconArrow:hover{
+    background-color: gray;
+}
+
+#arrowLeft{
+    margin-top: 50px;
+}
+
+#arrowRight{
+    margin-top: 50;
+}   
+
+
+
+
+
+

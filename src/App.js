@@ -4,7 +4,7 @@ import GlobalStyle from './styles/global'
 
 import Header from './components/Header'
 import Footer from './components/Footer'
-import Content from './components/Pages/Content'
+import Content from './components/Pages/Home'
 
 function App() {
   return (

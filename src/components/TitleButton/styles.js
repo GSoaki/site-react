@@ -8,4 +8,5 @@ export const TitleButton = styled.button`
     padding:15px;
     border-style: none none solid none;
     margin-right:50px;
+    background-color: #17a3a1;
 `;

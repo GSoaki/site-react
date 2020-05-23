@@ -6,6 +6,8 @@ import { TitleButton }  from './../TitleButton/styles.js'
 
 import { Container, Content } from './styles';
 
+import './../Header/style.css'
+
 import Mapa from './../../img/map.png'
 
 export default function Footer() {
@@ -14,18 +16,18 @@ export default function Footer() {
     }
     return (
         <Container>
-            <TitleButton onClick={()=>goUp()} style={{position:'absolute',marginLeft:'45%',bottom:-80,backgroundColor:'#148c8b',fontSize:12}}><FaArrowUp font-size="32px"/></TitleButton>
+            <TitleButton id="bottomButton" onClick={()=>goUp()} style={{}}><FaArrowUp fontSize="32px"/></TitleButton>
             <Content>
                 <h2>Contato:</h2>
                 <div ><br />
-                    <FaWhatsapp font-size="32px" style={{ verticalAlign: "middle", marginRight: 10 }} /> 41 99887-8745<br />
+                    <FaWhatsapp fontSize="32px" style={{ verticalAlign: "middle", marginRight: 10 }} /> 41 99887-8745<br />
                     <br />
-                    <FaPhone font-size="30px" style={{ verticalAlign: "middle", marginRight: 10 }} /> 3582-1272<br />
+                    <FaPhone fontSize="30px" style={{ verticalAlign: "middle", marginRight: 10 }} /> 3582-1272<br />
                     <br />
-                    <FaMapMarker font-size="30px" style={{ verticalAlign: "middle", marginRight: 10 }} />
+                    <FaMapMarker fontSize="30px" style={{ verticalAlign: "middle", marginRight: 10 }} />
                 Rezala Simão, 997  Portão,Curitiba-PR<br />
                     <br />
-                    <FaEnvelope font-size="30px" style={{ verticalAlign: "middle", marginRight: 10 }} />
+                    <FaEnvelope fontSize="30px" style={{ verticalAlign: "middle", marginRight: 10 }} />
                  abbatexuniformes@gmail.com
                 </div>
             </Content>
