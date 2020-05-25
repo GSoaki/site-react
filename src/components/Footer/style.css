@@ -1,0 +1,18 @@
+#button:hover {
+    background-color: #148c8b;
+}
+
+#bottomButton{
+    background-color: #148c8b;
+    margin-left: 50%;
+    position: relative;
+}
+
+#bottomButton:hover {
+    background-color: #0d6866;
+}
+
+.FAicon{
+    vertical-align: middle;
+    margin-right: 10px ;
+}

@@ -2,19 +2,33 @@ import React from 'react';
 
 import GlobalStyle from './styles/global'
 
-import Header from './components/Header'
-import Footer from './components/Footer'
-import Content from './components/Pages/Home'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+import Home from './components/Pages/Home'
+import Sobre from './components/Pages/Sobre'
 
 function App() {
   return (
     <>
-      <Header />
-      <Content />
-      <Footer />
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/sobre">
+            <Sobre />
+          </Route>
+        </Switch>
+      </Router>
       <GlobalStyle />
     </>
   );
 }
 
 export default App;
+

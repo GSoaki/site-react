@@ -1,26 +1,25 @@
 .ContainerContainer{
-    height: 150%;
+    height: 250%;
     width: 100%;
-    background-color: rgb(245, 245, 245);
+    background-color: #f5f5f5;
 }
 
 .entryContainer{
-    height: 50%;
+    margin-top: 15%;
+    height: 40%;
     width: 100%;
+    background-color: #148c8b;
 }
 
 .lastContainer{
-    height: 50%;
+    height: 30%;
     width: 100%;
+    text-align: center;
 }
 
-.iconArrow{
-    background-color: white;
-    position:'relative';
-}
 
 .iconArrow:hover{
-    background-color: gray;
+    background-color: #ffffff;
 }
 
 #arrowLeft{

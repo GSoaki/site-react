@@ -2,9 +2,16 @@
     background-color: #148c8b;
 }
 
-#bottomButton{
-    background-color: #148c8b;
-}
-#bottomButton:hover {
-    background-color: #0d6866;
+
+#topContainer{
+    height: 80px;
+    width: 100%;
+    padding: 0 30px;
+    background-color: #17a3a1;
+    z-Index:5;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left:0;
 }

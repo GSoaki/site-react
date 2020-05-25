@@ -7,7 +7,6 @@ export const Container = styled.div`
     background-color: #148c8b;
     padding: 20px;
     display: flex;
-    
 `;
 
 export const Content = styled.div`
@@ -16,5 +15,4 @@ export const Content = styled.div`
     color: #ffffff;
     background-color: #148c8b;
     padding: 20px;
-    
 `;
