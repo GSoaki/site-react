@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const TitleButton = styled.button`
-    border: none;
     outline: none;
     color: white;
     font-size: 20px;

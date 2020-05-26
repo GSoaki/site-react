@@ -5,9 +5,6 @@ import styled from 'styled-components'
 import { FaWhatsapp, FaPhone, FaEnvelope } from 'react-icons/fa'
 
 import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
     Link
 } from "react-router-dom";
 
@@ -17,9 +14,9 @@ import logo from './../../img/AbbatexIcon2.jpg'
 
 
 const Container = styled.div`
-    height: 80px;
+    height: 90px;
     width: 100%;
-    padding: 0 30px;
+    padding: 0 25px;
     background: #17a3a1;
     color: #ffffff;
     z-Index:5;
@@ -33,11 +30,6 @@ const Container = styled.div`
 
 
 export default function Header() {
-    function goDown() {
-        window.scrollTo(0, window.innerHeight)
-
-    }
-
     return (
         <Container>
 
@@ -47,19 +39,13 @@ export default function Header() {
                 <h1 style={{ color: 'yellow' }}>Abbatex</h1>
                 <h2 style={{ color: 'black' }}>Uniformes</h2>
             </div>
-            <div style={{ marginLeft: 30 }}>
-                <h1 >Abbatex</h1>
-                <h2 >Uniformes</h2>
-            </div>
 
-            <Link to="/"><TitleButton id="button" style={{ marginLeft: '7%' }} >Início</TitleButton></Link>
-            <TitleButton id="button" >Produtos</TitleButton>
+            <Link style={{ marginLeft: '10%' }}  to="/"><TitleButton id="button" >Início</TitleButton></Link>
+            <Link to="/produtos"><TitleButton id="button" >Produtos</TitleButton></Link>
             <Link to="/sobre"><TitleButton id="button" >Sobre</TitleButton></Link>
-            <TitleButton id="button"
-                onClick={() => goDown()}
-            >Contato</TitleButton>
+            <Link to="/contato"><TitleButton id="button">Contato</TitleButton></Link>
 
-            <div style={{ fontSize: 13, marginTop: '1.5%', marginLeft: '7%' }}>
+            <div style={{ fontSize: 13, marginTop: '1.5%', marginLeft: '6%' }}>
                 <FaWhatsapp fontSize="20px" className='FAicon' /> 41 99887-8745<br />
                 <br />
                 <FaPhone fontSize="20px" className='FAicon' /> 41 3582-1272<br /><br />
