@@ -8,7 +8,7 @@ function Content() {
     window.scrollTo(0, 0)
     return (
 
-        <div class="container" style={{ marginTop: '90px', width: '100%', height: '100%' }}>
+        <div className="container" style={{ marginTop: '90px', width: '100%', height: '100%' }}>
             <form style={{ marginLeft: '35%' }} action="action_page.php">
                 <br />
                 <label for="name">Nome:</label><br />

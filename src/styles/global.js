@@ -1,6 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
 
-
 export default createGlobalStyle`
 
     *{
@@ -13,18 +12,31 @@ export default createGlobalStyle`
 
     html, body, #root{
         height:100%;
+    
+    @media (max-width: 768px) {
+        font-size: 10px;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 15px;
     }
 
     body{
-        font: 17px 'Roboto', sans-serif;
-        background: #ffffff;
+        max-width:100% !important;
+	    height:auto;
+        background: #f5f5f5;
         color: #000000;
         -webkit-font-smoothing: antialiased !important;
-        
     }
 
     ul{
         list-style: none;
+    }
+
+    img{
+      
+    max-width:100%;
+            
     }
 
 `;

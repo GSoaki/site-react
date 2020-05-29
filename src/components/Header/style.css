@@ -1,3 +1,31 @@
 #button:hover {
     background-color: #148c8b;
 }
+
+
+@media(max-width:970px){
+    .IconDiv{  
+        display: none;
+    }
+    .headerLogo{
+        display: none;
+    }
+    
+}
+
+.FAicon{
+    margin-left: 30px;
+}
+
+.IconDiv{
+    font-size: 13px;
+    margin-left: 2%;
+}
+
+.headerLogo{
+    margin-right: 1%;
+    height: 100%;
+    width: 6%;
+}
+
+

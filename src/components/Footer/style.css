@@ -6,6 +6,8 @@
     background-color: #148c8b;
     margin-left: 50%;
     position: relative;
+    height: 50px;
+    width: 50px;
 }
 
 #bottomButton:hover {
@@ -16,3 +18,20 @@
     vertical-align: middle;
     margin-right: 10px ;
 }
+
+
+@media(max-width:900px){
+    .FAicon{  
+        font-size: 20px;
+    }
+    #bottomButton{
+        height: 35px;
+        width: 35px;
+    }
+}
+
+
+
+
+
+
