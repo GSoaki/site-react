@@ -5,44 +5,46 @@
     flex-Direction: column; 
     background-Color:#f5f5f5;
     align-items: center;
+    margin-bottom: 10%;
+    font-size: 22px;
 }
 
-.MainDiv{
+.LeftDiv{
     height:50%;
     width:48%;
     text-align:center;
     color: #148c8b;
     margin-top: 3%;
+    margin-Left:-35%;
 }
 
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
+.RightDiv{
+    height:50%;
+    width:48%;
+    text-align:center;
+    color: #148c8b;
+    margin-top: 3%;
+    margin-Left:30%;
 }
-  
-input[type=submit] {
-    background-color: #148c8b;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-  
-input[type=submit]:hover {
-    background-color: #107574;
-}
-  
+
 .container {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
 }
 
-
+@media(max-width:800px){
+    .LeftDiv{
+        width:80%;
+        margin-Left: 0%;
+        margin-top: 0%;
+    }
+    .RightDiv{
+        width:80%;
+        margin-Left:0%;
+    }
+    .Container{
+        font-size: 17px;
+    }
+}
+  

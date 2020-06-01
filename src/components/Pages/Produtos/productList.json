@@ -1,0 +1,69 @@
+[ 
+    
+
+     {
+        "id":"1",
+        "url":"../../../Images/roupa1.png",
+        "name":"Calça",
+        "description":"Calça Simples",
+        "sizes":["P","M","G"],
+        "fabrics":["Algodão","Linho"]
+    },
+    {
+        "id":"2",
+        "url":"../../../Images/roupa2.png",
+        "name":"Camisa",
+        "description":"Camisa Simples",
+        "sizes":["P","M","G"],
+        "fabrics":["Algodão","Linho"]
+    },
+    {
+        "id":"3",
+        "url":"../../../Images/roupa3.png",
+        "name":"Jaleco",
+        "description":"Jaleco Simples",
+        "sizes":["P","M","G"],
+        "fabrics":["Algodão","Linho"]
+    },
+    {
+        "id":"4",
+        "url":"../../../Images/roupa4.png",
+        "name":"Avental",
+        "description":"Avental Simples",
+        "sizes":["P","M","G"],
+        "fabrics":["Algodão","Linho"]
+    },
+    {
+        "id":"5",
+        "url":"../../../Images/roupa5.png",
+        "name":"Bota",
+        "description":"Bota Simples",
+        "sizes":["38","39","40"],
+        "fabrics":[""]
+    },
+    {
+        "id":"6",
+        "url":"../../../Images/roupa5.png",
+        "name":"Touca",
+        "description":"Touca Simples",
+        "sizes":[""],
+        "fabrics":[""]
+    },
+    {
+        "id":"7",
+        "url":"../../../Images/roupa5.png",
+        "name":"Luva",
+        "description":"Luva Simples",
+        "sizes":[""],
+        "fabrics":[""]
+    },
+    {
+        "id":"8",
+        "url":"../../../Images/roupa5.png",
+        "name":"Camiseta",
+        "description":"Camiseta Simples",
+        "sizes":[""],
+        "fabrics":[""]
+    }
+    
+]

@@ -4,7 +4,7 @@ import {
     Link
 } from "react-router-dom";
 
-import { FaAngleLeft, FaAngleRight, FaStar } from 'react-icons/fa'
+import { FaAngleLeft, FaAngleRight, FaStar, FaTimes } from 'react-icons/fa'
 
 import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
@@ -24,49 +24,70 @@ import roupa5 from '../../../Images/roupa5.png'
 import './styles.css'
 
 
+
 function Content() {
     window.scrollTo(0, 0)
+    var Aberto = true;
 
-    function SampleNextArrow(props) {
+    function closeDiv() {
+        document.getElementById('extraDiv').style.display = 'none';
+        document.getElementById('Container').style.opacity = 1;
+        Aberto = false;
+        console.log(Aberto)
+    }
+
+    function SampleNextArrow() {
         return (
             <FaAngleRight
-            className='FAicon'
+                className='FAicon'
                 id="Arrow-right"
                 fontSize="35px"
             />
         );
     }
-    function SamplePrevArrow(props) {
+    function SamplePrevArrow() {
         return (
             <FaAngleLeft
-            className='FAicon'
+                className='FAicon'
                 id="Arrow-left"
                 fontSize="35px"
             />
         );
     }
     return (
-        <div className="ContainerContainer">
-            <div className='entryContainer'>
-
-                <img style={{marginLeft:'5%'}} src={Banner} alt="https://br.freepik.com/fotos-vetores-gratis/restaurante Restaurante foto criado por freepik - br.freepik.com"/>
-
+        <>
+            <div id="extraDiv">
+                <FaTimes
+                    className='FAicon CloseIcon'
+                    fontSize="35px"
+                    style={{ position: 'relative', left: '45%' }}
+                    onClick={closeDiv}
+                />
+                <h1>Máscara de Tecido</h1>
             </div>
-            <div className='ListDiv'>
-                <h1 className='listTitle'>Qualidade</h1>
-                <ul className='listContainer'>
-                    <li className='listItem' >
-                        <FaStar className='FAicon' fontSize="35px" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique velit vel pharetra ornare.</li>
-                    <li className='listItem'>
-                        <FaStar className='FAicon' fontSize="35px" />orem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique velit vel pharetra ornare.</li>
-                    <li className='listItem'>
-                        <FaStar className='FAicon' fontSize="35px" />rem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique velit vel pharetra ornare.</li>
-                    <li className='listItem'>
-                        <FaStar className='FAicon' fontSize="35px" />em ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique velit vel pharetra ornare.</li>
-                </ul>
+            <div style={Aberto && { opacity: 0.5 }} id="Container" className="Container">
 
-            </div>
-            <div className='lastContainer'>
+                <div className='entryContainer'>
+                <Link id="bannerLink" to="/contato"/>
+                    <img style={{ marginLeft: '-25%',width:'90%',position:'relative'}} src={Banner} alt="https://br.freepik.com/fotos-vetores-gratis/restaurante Restaurante foto criado por freepik - br.freepik.com" />
+                </div>
+
+                <div className='ListDiv'>
+                    <h1 className='listTitle'>Qualidade</h1>
+                    <ul className='listContainer'>
+                        <li className='listItem' >
+                            <FaStar className='FAicon' fontSize="35px" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique velit vel pharetra ornare.</li>
+                        <li className='listItem'>
+                            <FaStar className='FAicon' fontSize="35px" />orem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique velit vel pharetra ornare.</li>
+                        <li className='listItem'>
+                            <FaStar className='FAicon' fontSize="35px" />rem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique velit vel pharetra ornare.</li>
+                        <li className='listItem'>
+                            <FaStar className='FAicon' fontSize="35px" />em ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique velit vel pharetra ornare.</li>
+                    </ul>
+
+                </div>
+
+                <div className='lastContainer'>
                     <Link style={{ textDecoration: 'none' }} to="/produtos">
                         <h1 className='listTitle'>Produtos</h1>
                     </Link>
@@ -97,8 +118,9 @@ function Content() {
                         </Link>
 
                     </Carousel>
+                </div>
             </div>
-        </div>
+        </>
     );
 }
 
@@ -114,6 +136,5 @@ export default function Home() {
 
 
 }
-
 
 

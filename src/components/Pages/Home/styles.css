@@ -1,34 +1,34 @@
-@media(min-width:900px){
-    .carousel{
-        width: 80% !important;
-        height: 80%;
-    }
-    
-    .entryContainer{
-        margin-top: 8%;
-    }
-
+#extraDiv{
+    position: fixed;
+    width: 50%;
+    height: 80%;
+    background-color: #f5f5f5;
+    margin-left: 25%;
+    z-index: 10;
+    border: 1px solid black;
+    border-radius: 4px;
+    text-align: center;
+    align-items: center;
+    padding: 15px;
 }
 
-
-@media(max-width:900px){
-    .FAicon{  
-        font-size: 20px;
-    }
-    .entryContainer{
-        margin-top: 15%;
-    }
+.CloseIcon:hover{
+    background-color: #d3d3d3;
+   
 }
 
-
-.FAicon{
-    vertical-align: middle;
+#bannerLink{
+    padding: 15%;
+    padding-bottom: 0;
+    position: relative;
+    left: 5%;
+    top: 10%;
+    z-index: 4;
 }
 
-.ContainerContainer{
+.Container{
     height: 100%;
     width: 100%;
-    background-color: #f5f5f5;
 }
 
 .entryContainer{
@@ -41,13 +41,7 @@
     background-color: #ffffff;
 }
 
-#arrowLeft{
-    margin-top: 50px;
-}
 
-#arrowRight{
-    margin-top: 50;
-} 
 
 .ListDiv{
     width: 100%;
@@ -57,15 +51,15 @@
 
 .listItem{
     padding:10px;
+    width: 100%;
     margin-right:10px;
-
     border-color: #148c8b;
     border-style: solid;
     border-width: 1pt;
     color: #148c8b;
     align-items: center;
-    display: flex;
-    flex-direction: column;
+    display:flex;
+    flex-direction:column;
 }
 
 .listContainer{
@@ -73,6 +67,8 @@
     flex-direction:row;
     height:100%;
     background-color: #f5f5f5;
+    width: 100%;
+    font-size: 18px;
 }
 
 .listTitle{
@@ -96,4 +92,32 @@
 }
 
 
+
+@media(min-width:900px){
+    .carousel{
+        width: 80% !important;
+        height: 80%;
+    }
+    .entryContainer{
+        margin-top: 5%;
+    }
+
+}
+
+
+@media(max-width:900px){
+    .FAicon{  
+        font-size: 16px;
+    }
+    #extraDiv{
+        width: 70%;
+        height: 50%;
+        margin-left: 15%;
+    }
+    .listContainer{
+    width: 20%;
+    font-size: 10px;
+    }
+  
+}
 

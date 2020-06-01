@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { TitleButton } from './../TitleButton/styles.js'
+import { TitleButton } from './TitleButton/styles.js'
 import styled from 'styled-components'
 import { FaWhatsapp, FaPhone, FaEnvelope } from 'react-icons/fa'
 
@@ -32,13 +32,10 @@ const Container = styled.div`
 
 `;
 
-
-
 export default function Header() {
     return (
         <Container>
-
-            <img src={logo} className='headerLogo' ></img>
+            <img src={logo} alt="" className='headerLogo' ></img>
 
             <div>
                 <h2 style={{ color: 'yellow' }}>Abbatex</h2>
@@ -54,7 +51,7 @@ export default function Header() {
                 <FaWhatsapp fontSize="20px" className='FAicon' /> 41 99887-8745
                 <FaPhone fontSize="20px" className='FAicon' /> 41 3582-1272
                 <FaEnvelope fontSize="20px" className='FAicon' />
-                 abbatexuniformes@gmail.com
+                {" "}abbatexuniformes@gmail.com
             </div>
 
         </Container>

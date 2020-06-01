@@ -1,20 +1,131 @@
-.gridContainer {
+
+#gridContainer{
 height: 100%;
 display: grid;
-grid-template-columns: 15% 15% 15% 15%;
+grid-template-columns: 20% 20% 20% 20%;
 background-color: #f5f5f5;
+margin-bottom: 10%;
+}
 
+.productStyle{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+}
+
+.sizeStyle{
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 15%;
+    padding: 5px;
+}
+
+.fabricStyle{
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    padding: 5px;
 }
 
 .gridItem {
 background-color: #f5f5f5;
-border-style: none none none solid ; 
+border-style: solid; 
 border-width: 1px;
 border-color: #148c8b;
 margin-top: 20%;
-margin-left: 100%;
+margin-left: 60%;
 height: 280px;
 width: 200px;
+box-shadow: 1px 1px 3px black;
+color: #148c8b;
 font-size: 20px;
 text-align: center;
+}
+
+.CloseIcon{
+    position: relative;
+    left: 42%;
+}
+
+.gridItem:hover{
+    background-color: #ececec;
+    box-shadow: 4px 4px 6px black;
+}
+    
+#productImage{
+    max-width: 150px;
+}
+
+#focusedItem{
+    position: absolute;
+    z-index: 2;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #148c8b;
+    color: #148c8b;
+    height: 400px;
+    width: 500px;
+    background-color: #f5f5f5;
+    left: 35%;
+    align-items: center;
+    text-align: center;
+}
+
+@media(max-width:1024px){
+    #gridContainer {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 30% 30% 30%;
+        margin-bottom: 10%;
+        
+    } 
+    .gridItem {
+        margin-top: 10%;
+        margin-left: 20%;
+        font-size: 10px;
+        height: 140px;
+        width: 100px;
+    }
+    #productImage{
+        max-width: 90px;
+    }
+    .productStyle{
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+    }
+    #focusedItem{
+        height: 370px;
+        width: 275px;
+        left: 35%;
+    }
+    .FAicon{
+        left: 40%;
+    }
+    
+    
+}
+
+@media(max-width:700px){
+    #gridContainer {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 50% 50%;
+        margin-bottom: 15%;
+        
+    } 
+    .gridItem {
+        margin-top: 10%;
+        margin-left: 20%;
+        font-size: 8px;
+        height: 120px;
+        width: 90px;
+    }
+    #focusedItem{
+        height: 325px;
+        width: 275px;
+        left: 10%;
+    }
+    #productImage{
+        max-width: 70px;
+    }
 }

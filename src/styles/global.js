@@ -16,9 +16,14 @@ export default createGlobalStyle`
     @media (max-width: 768px) {
         font-size: 10px;
     }
+    
+    @media (max-width: 950px) {
+        font-size: 12px;
+    }
 
-    @media (min-width: 768px) {
+    @media (min-width: 950px) {
         font-size: 15px;
+    }
     }
 
     body{
@@ -38,5 +43,6 @@ export default createGlobalStyle`
     max-width:100%;
             
     }
+    
 
 `;

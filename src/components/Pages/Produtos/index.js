@@ -1,36 +1,103 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Header from './../../Header'
 import Footer from './../../Footer'
 
+import { FaTimes } from 'react-icons/fa'
+
 import './styles.css'
+
+import productList from './productList.json'
+
+import image from './../../../Images/roupa1.png'
 
 
 function Content() {
+    window.scrollTo(0, 0)
+
+    const [focusedItem, setFocusedItem] = useState('')
+
+    const products = productList;
+
+    const imagem = image
+
+    function productStyle(productProp, propName) {
+
+        if (propName === 'size' && productProp != "") {
+            return (
+                <div>
+                    Tamanhos
+                    <div className="productStyle">{productProp.id,productProp.map(prop => <div className="sizeStyle">{prop}</div>)}</div>
+                </div>
+            );
+        }
+        else if (propName === 'fabric' && productProp != "") {
+            return (
+                <div >
+                    Tecidos
+                    <div className="productStyle">{productProp.id,productProp.map(prop => <div className="fabricStyle">{prop}</div>)}</div>
+                </div>
+            );
+        }
+
+    }
+
+    function gridItem(products) {
+
+        return (
+            <li key={products.id} className="gridItem" onClick={() => itemFocus(products)}>
+                <h3>{products.name}</h3>
+
+                <img id="productImage" src={imagem} alt=" " />
+
+                <div>{products.description}</div>
+              
+            </li>
+        );
+    }
+
+    function closeItemFocus() {
+        document.getElementById('gridContainer').style.opacity = 1;
+        document.getElementById('title').style.opacity = 1;
+        setFocusedItem('')
+
+    }
+
+    function itemFocus(products) {
+        if (focusedItem == '') {
+            document.getElementById('gridContainer').style.opacity = 0.5;
+            document.getElementById('title').style.opacity = 0.5;
+
+            setFocusedItem(<div id="focusedItem">
+                <FaTimes
+                    className='FAicon CloseIcon'
+                    fontSize="35px"
+                    onClick={() => closeItemFocus()}
+                />
+                <h3>{products.name}</h3>
+
+                <img id="productImage" src={imagem} alt=" " />
+
+                <div>{products.description}</div>
+                <br/>
+                <br/>
+
+                {productStyle(products.fabrics, 'fabric')}
+                <br/>
+
+                {productStyle(products.sizes, 'size')}</div>)
+        }
+    }
 
     return (
-        <div style={{ height: '200%',marginTop:'90px'}}>
-            <div className="gridContainer">
-                <div className="gridItem">1</div>
-                <div className="gridItem">2</div>
-                <div className="gridItem">3</div>
-                <div className="gridItem">4</div>
-                <div className="gridItem">5</div>
-                <div className="gridItem">6</div>
-                <div className="gridItem">7</div>
-                <div className="gridItem">8</div>
-                <div className="gridItem">9</div>
-                <div className="gridItem">10</div> 
-                <div className="gridItem">11</div> 
-                <div className="gridItem">12</div> 
-                <div className="gridItem">13</div>
-                <div className="gridItem">14</div> 
-                <div className="gridItem">15</div> 
-                <div className="gridItem">16</div>
-            </div>
+        <div>
+            <h1 id="title" style={{ textAlign: 'center', color: '#148c8b', marginTop: '10%' }}>Produtos</h1>
+            {focusedItem}
+            <ul id="gridContainer">{products.map(products => gridItem(products))}</ul>
         </div>
     );
 }
+
 
 
 export default function Sobre() {

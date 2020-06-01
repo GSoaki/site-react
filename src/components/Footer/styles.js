@@ -11,6 +11,7 @@ export const Container = styled.div`
     flex-direction:row;
     @media(max-width:900px){
         flex-direction:column;
+        font-size:10px;
     }
 `;
 
