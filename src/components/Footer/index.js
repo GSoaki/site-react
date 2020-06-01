@@ -8,8 +8,6 @@ import './../Footer/style.css'
 
 import Mapa from './../../Images/map.png'
 
-import Map from './map'
-
 export default function Footer() {
     return (
 
