@@ -13,20 +13,21 @@ export default function Footer() {
 
         <Container>
             <Content>
-                <div className='footerCont' style={{ marginRight: '10%' }}>
+                <div style={{ marginRight: '10%'}}>
                     <h2>Contato:</h2>
-                    <FaWhatsapp fontSize="32px" className='FAicon' /> 41 99887-8745<br />
+                    <br/>
+                    <FaWhatsapp fontSize="32px" className='footerIcon' /> 41 99887-8745<br />
                     <br />
-                    <FaPhone fontSize="30px" className='FAicon' /> 41 3582-1272<br />
+                    <FaPhone fontSize="30px" className='footerIcon' /> 41 3582-1272<br />
                     <br />
-                    <FaMapMarker fontSize="30px" className='FAicon' />
+                    <FaMapMarker fontSize="30px" className='footerIcon' />
                 Rezala Simão, 997  Portão,Curitiba-PR<br />
                     <br />
-                    <FaEnvelope fontSize="30px" className='FAicon' />
-                 abbatexuniformes@gmail.com
+                    <FaEnvelope fontSize="30px" className='footerIcon' />
+                   {" "}abbatexuniformes@gmail.com
                     </div>
 
-                <div className='footerCont'>
+                <div >
                     <h2>Horário de Funcionamento:</h2><br />Segunda-feira a Quinta-feira:<br />
                     <br />08:00h - 12:00 e 13:30 - 18:00<br />
                     <br />Sexta-feira:

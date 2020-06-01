@@ -35,7 +35,7 @@ const Container = styled.div`
 export default function Header() {
     return (
         <Container>
-            <img src={logo} alt="" className='headerLogo' ></img>
+            <img src={logo} alt="logo" className='headerLogo' ></img>
 
             <div>
                 <h2 style={{ color: 'yellow' }}>Abbatex</h2>

@@ -4,7 +4,7 @@ import {
     Link
 } from "react-router-dom";
 
-import { FaAngleLeft, FaAngleRight, FaStar, FaTimes } from 'react-icons/fa'
+import { FaAngleLeft, FaAngleRight, FaStar, FaTimes, FaClock, FaUserCheck, FaMoneyCheckAlt } from 'react-icons/fa'
 
 import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
@@ -13,7 +13,6 @@ import Header from './../../Header'
 import Footer from './../../Footer'
 
 import Banner from '../../../Images/BannerPrincipal.jpg'
-
 
 import roupa1 from '../../../Images/roupa1.png'
 import roupa2 from '../../../Images/roupa2.png'
@@ -68,21 +67,52 @@ function Content() {
             <div style={Aberto && { opacity: 0.5 }} id="Container" className="Container">
 
                 <div className='entryContainer'>
-                <Link id="bannerLink" to="/contato"/>
-                    <img style={{ marginLeft: '-25%',width:'90%',position:'relative'}} src={Banner} alt="https://br.freepik.com/fotos-vetores-gratis/restaurante Restaurante foto criado por freepik - br.freepik.com" />
+                    <Link id="bannerLink" to="/contato" />
+                    <img style={{ marginLeft: '-25%', width: '90%', position: 'relative' }} src={Banner} alt="https://br.freepik.com/fotos-vetores-gratis/restaurante Restaurante foto criado por freepik - br.freepik.com" />
                 </div>
 
                 <div className='ListDiv'>
+                    <h2 className='listTitle'>Uniformes Escolares</h2>
+                    <h3 className='listTitle'>Escolas Parceiras</h3>
+
+                    <ul className="schoolList">
+                        <li className="schoolItem">
+                            Escola 1
+                        </li>
+                        <li className="schoolItem">
+                            Escola 2
+                        </li>
+                        <li className="schoolItem">
+                            Escola 3
+                        </li>
+                        <li className="schoolItem">
+                            Escola 4
+                        </li>
+                        <li className="schoolItem">
+                            Escola 5
+                        </li>
+                        <li className="schoolItem">
+                            Escola 6
+                        </li>
+                        <li className="schoolItem">
+                            Escola 7
+                        </li>
+                        <li className="schoolItem">
+                            Escola 8
+                        </li>
+                    </ul>
+                    <br/>
                     <h1 className='listTitle'>Qualidade</h1>
                     <ul className='listContainer'>
                         <li className='listItem' >
-                            <FaStar className='FAicon' fontSize="35px" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique velit vel pharetra ornare.</li>
+                            <FaStar className='FAicon' fontSize="35px" />Qualidade do material ao produto final. Personalizado do jeito que precisar.
+                            </li>
                         <li className='listItem'>
-                            <FaStar className='FAicon' fontSize="35px" />orem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique velit vel pharetra ornare.</li>
+                            <FaClock className='FAicon' fontSize="35px" />Entrega rápida e sempre dentro do prazo.</li>
                         <li className='listItem'>
-                            <FaStar className='FAicon' fontSize="35px" />rem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique velit vel pharetra ornare.</li>
+                            <FaUserCheck className='FAicon' fontSize="35px" />Atendimento rápido e de qualidade.</li>
                         <li className='listItem'>
-                            <FaStar className='FAicon' fontSize="35px" />em ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique velit vel pharetra ornare.</li>
+                            <FaMoneyCheckAlt className='FAicon' fontSize="35px" />Ótimos preços e excelente custo-benefício.</li>
                     </ul>
 
                 </div>
@@ -105,19 +135,21 @@ function Content() {
                             <img src={roupa1} alt="fotos de https://www.freepik.com/free-photos-vectors/icon Icon vector created by freepik - www.freepik.com" />
                         </Link>
                         <Link style={{ textDecoration: 'none' }} to="/produtos">
-                            <img src={roupa2} alt=" " />
+                            <img src={roupa2} alt="roupa2" />
                         </Link>
                         <Link style={{ textDecoration: 'none' }} to="/produtos">
-                            <img src={roupa3} alt=" " />
+                            <img src={roupa3} alt="roupa3" />
                         </Link>
                         <Link style={{ textDecoration: 'none' }} to="/produtos">
-                            <img src={roupa4} alt=" " />
+                            <img src={roupa4} alt="roupa4" />
                         </Link>
                         <Link style={{ textDecoration: 'none' }} to="/produtos">
-                            <img src={roupa5} alt=" " />
+                            <img src={roupa5} alt="roupa5" />
                         </Link>
 
                     </Carousel>
+                    <br />
+
                 </div>
             </div>
         </>

@@ -1,10 +1,10 @@
 
 #gridContainer{
-height: 100%;
-display: grid;
-grid-template-columns: 20% 20% 20% 20%;
-background-color: #f5f5f5;
-margin-bottom: 10%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    background-color: #f5f5f5;
+    margin-bottom: 10%;
 }
 
 .productStyle{
@@ -28,18 +28,19 @@ margin-bottom: 10%;
 }
 
 .gridItem {
-background-color: #f5f5f5;
-border-style: solid; 
-border-width: 1px;
-border-color: #148c8b;
-margin-top: 20%;
-margin-left: 60%;
-height: 280px;
-width: 200px;
-box-shadow: 1px 1px 3px black;
-color: #148c8b;
-font-size: 20px;
-text-align: center;
+    background-color: #f5f5f5;
+    border-style: solid;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: #148c8b;
+    margin-top: 20%;
+    margin-left: 60%;
+    height: 280px;
+    width: 200px;
+    box-shadow: 1px 1px 3px black;
+    color: #148c8b;
+    font-size: 20px;
+    text-align: center;
 }
 
 .CloseIcon{
@@ -61,6 +62,7 @@ text-align: center;
     z-index: 2;
     border-style: solid;
     border-width: 1px;
+    border-radius: 8px;
     border-color: #148c8b;
     color: #148c8b;
     height: 400px;

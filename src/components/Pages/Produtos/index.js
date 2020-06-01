@@ -48,7 +48,7 @@ function Content() {
             <li key={products.id} className="gridItem" onClick={() => itemFocus(products)}>
                 <h3>{products.name}</h3>
 
-                <img id="productImage" src={imagem} alt=" " />
+                <img id="productImage" src={imagem} alt="imagem do produto" />
 
                 <div>{products.description}</div>
               
@@ -76,7 +76,7 @@ function Content() {
                 />
                 <h3>{products.name}</h3>
 
-                <img id="productImage" src={imagem} alt=" " />
+                <img id="productImage" src={imagem} alt="imagem do produto" />
 
                 <div>{products.description}</div>
                 <br/>
