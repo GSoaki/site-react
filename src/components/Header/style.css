@@ -9,8 +9,8 @@
 }
 
 .IconDiv{
-    font-size: 18px;
-    margin-left: 2%;
+    font-size: 20px;
+    margin-left: 8%;
 }
 
 .headerLogo{
@@ -20,21 +20,18 @@
 }
 
 @media(max-width:1350px){
-    .IconDiv{  
-        font-size: 18px;
-        
-    }
     .headerLogo{
         display: none;
+    }
+    .IconDiv{
+        margin-left: 5%;
     }
     
 }
 
-
-@media(max-width:970px){
+@media(max-width:1055px){
     .IconDiv{  
         display: none;
-        
     }
     
 }

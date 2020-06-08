@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import Header from './../../Header'
-import Footer from './../../Footer'
+import Header from '../../components/Header'
+import Footer from '../../components/Footer'
 
 import { FaTimes } from 'react-icons/fa'
 
@@ -9,7 +9,7 @@ import './styles.css'
 
 import productList from './productList.json'
 
-import image from './../../../Images/roupa1.png'
+import image from './../../Images/roupa1.png'
 
 
 function Content() {

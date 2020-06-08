@@ -50,8 +50,10 @@ export default function Header() {
             <div className='IconDiv'>
                 <FaWhatsapp fontSize="20px" className='FAicon' /> 41 99887-8745
                 <FaPhone fontSize="20px" className='FAicon' /> 41 3582-1272
-                <FaEnvelope fontSize="20px" className='FAicon' />
-                {" "}abbatexuniformes@gmail.com
+                <div>
+                    <FaEnvelope fontSize="20px" className='FAicon' />
+                    {" "}abbatexuniformes@gmail.com
+                </div>
             </div>
 
         </Container>

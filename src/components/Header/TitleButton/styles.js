@@ -10,7 +10,11 @@ export const TitleButton = styled.button`
     border-color:#ffffff;
     background-color: #17a3a1;
 
-    @media(max-width:1024px){
+    @media(max-width:1076px){
+        padding:11px;
+        margin-right:9px;
+    }
+    @media(max-width:900px){
         font-size: 8px;
         padding:8px;
         margin-right:10px;

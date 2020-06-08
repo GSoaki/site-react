@@ -8,10 +8,10 @@ import {
   Route,
 } from "react-router-dom";
 
-import Home from './components/Pages/Home'
-import Sobre from './components/Pages/Sobre'
-import Produtos from './components/Pages/Produtos'
-import Contato from './components/Pages/Contato'
+import Home from './Pages/Home'
+import Sobre from './Pages/Sobre'
+import Produtos from './Pages/Produtos'
+import Contato from './Pages/Contato'
 
 function App() {
   return (

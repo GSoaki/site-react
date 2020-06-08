@@ -4,18 +4,19 @@ import { FaWhatsapp, FaPhone, FaMapMarker, FaEnvelope } from 'react-icons/fa'
 
 import { Container, Content } from './styles';
 
+import { Map, TileLayer, Marker} from 'react-leaflet'
+
 import './../Footer/style.css'
 
-import Mapa from './../../Images/map.png'
 
 export default function Footer() {
     return (
 
         <Container>
             <Content>
-                <div style={{ marginRight: '10%'}}>
+                <div style={{ marginRight: '10%' }}>
                     <h2>Contato:</h2>
-                    <br/>
+                    <br />
                     <FaWhatsapp fontSize="32px" className='footerIcon' /> 41 99887-8745<br />
                     <br />
                     <FaPhone fontSize="30px" className='footerIcon' /> 41 3582-1272<br />
@@ -24,7 +25,7 @@ export default function Footer() {
                 Rezala Simão, 997  Portão,Curitiba-PR<br />
                     <br />
                     <FaEnvelope fontSize="30px" className='footerIcon' />
-                   {" "}abbatexuniformes@gmail.com
+                    {" "}abbatexuniformes@gmail.com
                     </div>
 
                 <div >
@@ -35,11 +36,20 @@ export default function Footer() {
                         </div>
 
             </Content>
+
             <Content>
-                <img className='footerImg' src={Mapa} alt="Localização"></img>
+                <Map style={{ height: '40vh', width: 500 }} center={[-25.4702006, -49.3179752]} zoom={16}>
+                    <TileLayer
+                        attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                    />
+                    <Marker position={[-25.4698506, -49.3182452]}>
+                    </Marker>
+                </Map>
             </Content>
 
         </Container>
 
     )
 }
+

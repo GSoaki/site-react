@@ -14,11 +14,11 @@ export default createGlobalStyle`
         height:100%;
     
     @media (max-width: 768px) {
-        font-size: 10px;
+        font-size: 9px;
     }
     
     @media (max-width: 950px) {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     @media (min-width: 950px) {

@@ -49,8 +49,8 @@
 }
 
 .gridItem:hover{
-    background-color: #ececec;
     box-shadow: 4px 4px 6px black;
+    transform: scale(1.05);
 }
     
 #productImage{
