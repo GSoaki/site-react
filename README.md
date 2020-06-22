@@ -4,10 +4,19 @@ Site Empresarial feito com React.
 
 
 Home
-![alt text](https://i.imgur.com/cRcxtel.png)
+
+
+<img src="https://i.imgur.com/cRcxtel.png" width="250">
+
 
 Produtos
-![alt text](https://i.imgur.com/etNgNJr.png)
+
+
+<img src="https://i.imgur.com/etNgNJr.png" width="250">
+
 
 Contato
-![alt text](https://i.imgur.com/LjaOPhB.png)
+
+
+<img src="https://i.imgur.com/LjaOPhB.png" width="250">
+
